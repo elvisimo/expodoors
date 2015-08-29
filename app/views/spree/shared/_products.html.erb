@@ -1,0 +1,25 @@
+<% if products.any? %>
+<div id="products">
+  <h3><%= @taxon.name %></h3>
+  <% taxon.products.each do |prod| %>
+      <% url = spree.product_url(prod, taxon_id: @taxon.try(:id)) %>
+      <div id="product_<%= prod.id %>" class="col-md-3 col-sm-6 product-list-item"itemscope itemtype="https://schema.org/Product">
+        <div class="panel panel-default">
+          <% cache(@taxon.present? ? [I18n.locale, current_currency, @taxon, prod] : cache_key_for_product(prod)) do %>
+              <div class="panel-body text-center product-body">
+                <%= link_to small_image(prod, itemprop: "image"), url, itemprop: 'url' %><br/>
+
+                <%= link_to truncate(prod.name, length: 50), url, class: 'info', itemprop: "name", title: prod.name %>
+              </div>
+              <div class="panel-foot text-center">
+                <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <span class="price selling lead" itemprop="price">Цена от <%= display_price(prod) %></span>
+                </span>
+              </div>
+        </div>
+          <% end %>
+      </div>
+  <% end %>
+</div>
+<% end %>
+

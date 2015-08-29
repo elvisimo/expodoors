@@ -1,0 +1,44 @@
+<header>
+   <div class='row'>
+    <figure id="logo" class="col-sm-3" data-hook>
+        <%= image_tag("logo.png") %>
+        </figure>
+    <p id="header_promo" class="col-sm-3 col-sm-offset-2">Продажа межкомнатных и входных дверей от ведущих российских производителей.</p>
+    <div id="phone_numbers" class="col-sm-3 col-sm-offset-1">
+       <p>Звоните с 10.00 до 20.00</p>
+       <p class="phone_nums">+7 (499) 755-64-12</p>
+       <p class="phone_nums">+7 (499) 397-72-64</p>
+    </div>
+    </div>
+           <div class='header_nav'>
+           </div>   
+</header>
+
+     <!--navigation -->
+<div id="expo_nav_menu" class="navbar navbar-default col-sm-12" role='navigation'>
+    <ul class="nav navbar-nav">
+        <li><%= link_to Spree.t(:home), spree.root_path %></li>
+        <li><%= link_to Spree.t(:about), about_path %></li>
+        <li><%= link_to Spree.t(:services), services_path %></li>
+        <li><%= link_to Spree.t(:delivery), delivery_path %></li>
+        <li><%= link_to Spree.t(:promo), promo_path %></li>
+        <li><%= link_to Spree.t(:review), review_path %></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right list-unstyled ">
+            <li>
+                  <div id="link-to-cart">
+                    <noscript>
+                     <%= link_to Spree.t(:cart), '/cart' %> 
+                    </noscript>
+                    &nbsp;
+                </div>
+            </li>
+            <script>Spree.fetch_cart()</script>
+          <% if spree_current_user %>
+              <li><%= link_to Spree.t(:my_account), spree.account_path %></li>
+              <li><%= link_to Spree.t(:logout), spree.logout_path %></li>
+          <% else %>
+              <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
+          <% end %>
+    </ul>
+</div>

@@ -1,0 +1,225 @@
+body {
+    background-image: url('../img/whitewood_small.jpg');
+    background-repeat: repeat;
+}
+
+#expo_nav_menu {
+    background-color: brown;
+}
+
+#expo_nav_menu a{
+    color: white;
+}
+
+#expo_nav_menu a:hover{
+    opacity: 0.5;
+}
+.carousel-inner{
+    width: inherit;
+    height: 40em;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    margin-top: 1.5em;
+}
+#main {
+    margin-top: 1.5em;
+}
+
+ #foot {
+    background-color: #dddddd;
+   width:100%;
+    height: 100%;
+     margin-top: 2em;
+}
+
+#foot h3{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 0.1em solid brown;
+}
+
+.btn-info {
+    background-color: brown;
+    margin-top: 0.5em;
+}
+
+.thumbnail {
+    background-repeat: repeat;
+    background-color: #dddddd;
+    padding: 0;
+    margin-bottom: 0;
+}
+.head_part{
+    margin-bottom: 1.5em;
+}
+.head_part h4{
+    background-color: brown;
+    color: white;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+header {
+    color: grey;
+}
+
+.carousel-inner #photo{
+    width: 20em;
+    height: 20em;
+}
+
+#feedback {
+    width: inherit;
+    height: 20em;
+    background-color: blue;
+}
+#zamer img{
+    width:100%;
+    height:100%;
+    margin-bottom: 1.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#sale_promo{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.carousel-inner .review {
+    width: 30%;
+    height: 30%;    
+}
+.benefits{
+    margin-bottom: 1.5em;
+}
+.glyphicon-shopping-cart, .glyphicon-credit-card, .glyphicon-wrench{
+    font-size: 5em;
+    color: brown;
+    margin-top: 0.5em;
+    padding-bottom: 0px;
+}
+#catalog .thumbnail img {
+    margin-top: 1em;
+}
+
+#text_form {
+    height: 5em;
+}
+
+a .desc{
+    margin-left: 0.5em;
+}
+#sovet {background-color: #dddddd}
+#sovet a{
+    color: black;
+}
+#sovet h4{
+    background-color: brown;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+    color: white;
+}
+div[id^=sovet]:not(:last-child){
+    text-align: center;
+    margin-bottom: 1.5em;
+    border-bottom: 0.1em solid brown;
+}
+h4{
+    text-align: center;
+}
+
+.elastislide-carousel h3{
+    background-color: brown;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.product_slide{
+    background-color: #dddddd;
+}
+.elastislide-wrapper {
+    background-color: #dddddd;
+    margin-bottom: 1.5em;
+}
+#product_slide li {
+    background-color: white;
+    margin-right: 1em;
+}
+
+/* slider elastic */
+/* Elastislide Style */
+#our_doors {
+    padding-right: 0;
+    padding-left: 0;
+}
+.es-carousel-wrapper{
+    background: #101010;
+    padding:10px 37px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    position:relative;
+}
+.es-carousel{
+    overflow:hidden;
+    background:#000;
+}
+.es-carousel ul{
+    display:none;
+}
+.es-carousel ul li{
+    height:100%;
+    float:left;
+    display:block;
+}
+.es-carousel ul li a{
+    display:block;
+    border-style:solid;
+    border-color:#222;
+}
+.es-carousel ul li a img{
+    display:block;
+    border:none;
+    max-height:100%;
+    max-width:100%;
+}
+.es-nav span{
+    position:absolute;
+    top:50%;
+    left:12px;
+    background:transparent url(../images/nav.png) no-repeat top left;
+    width:14px;
+    height:26px;
+    margin-top:-13px;
+    text-indent:-9000px;
+    cursor:pointer;
+    opacity:0.8;
+}
+.es-nav span.es-nav-next{
+    right:12px;
+    left:auto;
+    background-position:top right;
+}
+.es-nav span:hover{
+    opacity:1.0;
+}
+/* elastic end */
+.zakaz_door{
+    background-color: #dddddd;
+    margin-bottom: 1.5em;
+    padding-right: 0;
+    padding-left: 0;
+}
+.zakaz_door h3{
+    background-color: brown;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1em;
+}

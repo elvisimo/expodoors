@@ -1,0 +1,621 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+*/
+
+
+
+/* Custom Elastislide Styling */
+
+
+.demo-1 .elastislide-horizontal {
+	padding: 10px 37px;
+	border-radius: 10px/90px;
+	box-shadow: 
+		0 1px 3px rgba(0, 0, 0, 0.1), 
+		inset -2px 0 3px 2px rgba(255, 255, 255, 0.6), 
+		inset 2px 0 3px 2px rgba(255, 255, 255, 0.6), 
+		inset -10px 0 10px 1px rgba(155, 155, 155, 0.1), 
+		inset 10px 0 10px 1px rgba(155, 155, 155, 0.1);
+}
+
+.demo-1 .elastislide-wrapper:before,
+.demo-1 .elastislide-wrapper:after{
+	content: '';
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left:  20px;
+	width: 50%;
+	height: 20%;
+	border-radius: 10px/90px;
+	box-shadow: 0 15px 10px rgba(0,0,0,0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+
+.demo-1 .elastislide-wrapper:after {
+	right: 20px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.demo-2 .elastislide-vertical {
+	max-width: 170px;
+	padding: 37px 10px;
+	border-radius: 90px/10px;
+	box-shadow: 
+		0 1px 3px rgba(0, 0, 0, 0.1), 
+		inset -2px 0 3px 2px rgba(255, 255, 255, 0.6), 
+		inset 2px 0 3px 2px rgba(255, 255, 255, 0.6), 
+		inset 0 -10px 10px 1px rgba(155, 155, 155, 0.1), 
+		inset 0 10px 10px 1px rgba(155, 155, 155, 0.1);
+}
+
+.demo-2 .elastislide-vertical:before {
+	top: 30px;
+	bottom: 30px;
+	left: 0;
+	right: 0;
+	content: " ";
+	position: absolute;
+	z-index: -2;
+	box-shadow: 0 0 15px rgba(0,0,0,0.6);
+	border-radius: 20px/160px;
+}
+
+.demo-2 .elastislide-vertical:after {
+	content: " ";
+	position: absolute;
+	z-index: -2;
+}
+
+.demo-3 .elastislide-horizontal {
+	background-color: #000;
+	padding: 30px 60px;
+}
+
+.no-touch .demo-3 .elastislide-horizontal {
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.no-touch .demo-3 .elastislide-horizontal:hover {
+	opacity: 1;
+}
+
+.demo-3 .elastislide-wrapper nav span {
+	background-color: #000;
+}
+
+.demo-3 .elastislide-carousel ul li a{
+	padding: 0 10px;
+}
+
+.demo-3 .elastislide-carousel ul li a img {
+	border-radius: 10px;
+	border: none;
+}
+
+.demo-4 .elastislide-horizontal {
+	background-color: transparent;
+	border-radius: 20px 20px 0 0;
+}
+
+.demo-3 .elastislide-horizontal.elastislide-loading,
+.demo-4 .elastislide-horizontal.elastislide-loading {
+	background-image: url(../images/loading_dark.gif);
+}
+
+.demo-4 .elastislide-carousel ul li a{
+	padding: 2px;
+}
+
+.demo-4 .elastislide-carousel ul li a img {
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 1px 2px #000;
+}
+
+.demo-4 .elastislide-wrapper nav span {
+	background-color: #666;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.demo-4 .image-preview img {
+	border-radius: 0 0 20px 20px;
+	max-width: 100%;
+	display: block;
+}
+
+.demo-4 .elastislide-carousel ul li.current-img a img {
+	box-shadow: 0 0 3px 2px rgba(62,235,255,0.8);
+}
+
+@media screen and (max-width: 460px) {
+	.demo-3 .elastislide-horizontal {
+		padding: 10px 40px;
+	}
+}
+/* Elastislide Style */
+
+
+.elastislide-list {
+	list-style-type: none;
+	display: none;
+}
+
+.no-js .elastislide-list {
+	display: block;
+}
+
+.elastislide-carousel ul li {
+	min-width: 20px; /* minimum width of the image (min width + border) */
+}
+
+.elastislide-wrapper {
+	position: relative;
+	background-color: #fff;
+	margin: 0 auto;
+	min-height: 60px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.elastislide-wrapper.elastislide-loading {
+	background-image: url(../img/loading.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.elastislide-horizontal {
+	padding: 10px 40px;
+}
+
+.elastislide-vertical {
+	padding: 40px 10px;
+}
+
+.elastislide-carousel {
+	overflow: hidden;
+	position: relative;
+}
+
+.elastislide-carousel ul {
+	position: relative;
+	display: block;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.elastislide-horizontal ul {
+	white-space: nowrap;
+}
+
+.elastislide-carousel ul li {
+	margin: 0;
+	-webkit-backface-visibility: hidden;
+}
+
+.elastislide-horizontal ul li {
+	height: 100%;
+	display: inline-block;
+}
+
+.elastislide-vertical ul li {
+	display: block;
+}
+
+.elastislide-carousel ul li a {
+	display: inline-block;
+	width: 100%;
+}
+
+.elastislide-carousel ul li a img {
+	display: block;
+	border: 2px solid white;
+	max-width: 100%;
+}
+
+/* Navigation Arrows */
+
+.elastislide-wrapper nav span {
+	position: absolute;
+	background: #ddd url(../img/nav.png) no-repeat 4px 3px;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	text-indent: -9000px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.elastislide-wrapper nav span:hover {
+	opacity: 1.0
+}
+
+.elastislide-horizontal nav span {
+	top: 50%;
+	left: 10px;
+	margin-top: -11px;
+}
+
+.elastislide-vertical nav span {
+	top: 10px;
+	left: 50%;
+	margin-left: -11px;
+	background-position: -17px 5px;
+}
+
+.elastislide-horizontal nav span.elastislide-next {
+	right: 10px;
+	left: auto;
+	background-position: 4px -17px;
+    background-color: brown;
+}
+.elastislide-horizontal nav span.elastislide-prev {
+    background-color: brown;
+}
+
+.elastislide-vertical nav span.elastislide-next {
+	bottom: 10px;
+	top: auto;
+	background-position: -17px -18px;
+}
+/* 
+@import "bootstrap-sprockets";
+@import "bootstrap"; 
+ */
+/* line 6, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+body {
+  background-image: url(/assets/whitewood_small-7e4f580103c855bb41d56f8f6a7c24d16559b05bbd8d245ed93dbb4a0ed36d58.jpg);
+  background-repeat: repeat;
+}
+
+/* line 11, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#expo_nav_menu {
+  background-color: brown;
+}
+
+/* line 15, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#expo_nav_menu a {
+  color: white;
+}
+
+/* line 19, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#expo_nav_menu a:hover {
+  opacity: 0.5;
+}
+
+/* line 23, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#link-to-cart {
+  height: inherit;
+  width: 100%;
+  padding-bottom: 0.7em;
+  padding-top: 0.4em;
+}
+
+/* line 29, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#link-to-cart .glyphicon-shopping-cart {
+  font-size: 1em;
+  color: white;
+}
+
+/* line 33, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.col-md-12 {
+  padding: 0;
+}
+
+/* line 36, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#slidebar {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+/* line 41, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#slidebar .carousel-inner {
+  width: inherit;
+  height: 40em;
+}
+
+/* line 45, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#slidebar .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 50, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+aside {
+  margin-top: 1.5em;
+}
+
+/* line 53, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#main {
+  margin-top: 1.5em;
+}
+
+/* line 57, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#foot {
+  background-color: #dddddd;
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+}
+
+/* line 64, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#foot h3 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 0.1em solid brown;
+}
+
+/* line 70, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.btn-info {
+  background-color: brown;
+  margin-top: 0.5em;
+}
+
+/* line 75, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.thumbnail {
+  background-repeat: repeat;
+  background-color: #dddddd;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* line 81, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.head_part {
+  margin-bottom: 1.5em;
+}
+
+/* line 84, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.head_part h4 {
+  background-color: brown;
+  color: white;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+/* line 91, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+header {
+  color: grey;
+  height: 5em;
+}
+
+/* line 96, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.carousel-inner #photo {
+  width: 20em;
+  height: 20em;
+}
+
+/* line 101, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#feedback {
+  width: inherit;
+  height: 20em;
+  background-color: blue;
+}
+
+/* line 106, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#zamer img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 113, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#sale_promo {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 116, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.carousel-inner .review {
+  width: 30%;
+  height: 30%;
+}
+
+/* line 120, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.benefits {
+  margin-bottom: 1.5em;
+}
+
+/* line 123, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.glyphicon-shopping-cart, .glyphicon-credit-card, .glyphicon-wrench {
+  font-size: 5em;
+  color: brown;
+  margin-top: 0.5em;
+  padding-bottom: 0px;
+}
+
+/* line 129, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#catalog .thumbnail img {
+  margin-top: 1em;
+}
+
+/* line 133, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#text_form {
+  height: 5em;
+}
+
+/* line 137, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+a .desc {
+  margin-left: 0.5em;
+}
+
+/* line 140, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#sovet {
+  background-color: #dddddd;
+}
+
+/* line 141, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#sovet a {
+  color: black;
+}
+
+/* line 144, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#sovet h4 {
+  background-color: brown;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+  color: white;
+}
+
+/* line 150, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+div[id^=sovet]:not(:last-child) {
+  text-align: center;
+  margin-bottom: 1.5em;
+  border-bottom: 0.1em solid brown;
+}
+
+/* line 155, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+h4 {
+  text-align: center;
+}
+
+/* line 159, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.elastislide-carousel h3 {
+  background-color: brown;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+/* line 167, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.product_slide {
+  background-color: #dddddd;
+}
+
+/* line 170, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.elastislide-wrapper {
+  background-color: #dddddd;
+  margin-bottom: 1.5em;
+}
+
+/* line 174, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#product_slide li {
+  background-color: white;
+  margin-right: 1em;
+}
+
+/* slider elastic */
+/* Elastislide Style */
+/* line 181, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+#our_doors {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 185, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-carousel-wrapper {
+  background: #101010;
+  padding: 10px 37px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* line 193, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-carousel {
+  overflow: hidden;
+  background: #000;
+}
+
+/* line 197, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-carousel ul {
+  display: none;
+}
+
+/* line 200, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-carousel ul li {
+  height: 100%;
+  float: left;
+  display: block;
+}
+
+/* line 205, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-carousel ul li a {
+  display: block;
+  border-style: solid;
+  border-color: #222;
+}
+
+/* line 210, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-carousel ul li a img {
+  display: block;
+  border: none;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/* line 216, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-nav span {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  background: transparent url(../images/nav.png) no-repeat top left;
+  width: 14px;
+  height: 26px;
+  margin-top: -13px;
+  text-indent: -9000px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* line 228, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-nav span.es-nav-next {
+  right: 12px;
+  left: auto;
+  background-position: top right;
+}
+
+/* line 233, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.es-nav span:hover {
+  opacity: 1.0;
+}
+
+/* elastic end */
+/* line 237, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.zakaz_door {
+  background-color: #dddddd;
+  margin-bottom: 1.5em;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 243, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/style.css.scss */
+.zakaz_door h3 {
+  background-color: brown;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) *
+ http://cssreset.com */
+
+ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}

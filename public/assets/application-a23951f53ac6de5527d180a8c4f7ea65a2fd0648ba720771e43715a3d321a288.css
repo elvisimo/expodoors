@@ -1,0 +1,93 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+*/
+
+
+
+/* line 1, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/footer.css.scss */
+.footer {
+  clear: both;
+  background-image: url("wood_header_bg");
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10em;
+  width: 100%;
+}
+/* line 1, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+#logo {
+  color: red;
+  font-size: 2em;
+  font-style: italic bold;
+  margin-top: 1.5em;
+}
+
+/* line 8, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+#header {
+  width: 100%;
+  height: 9em;
+}
+
+/* line 14, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+#header #header_promo {
+  margin-top: 2.8em;
+}
+
+/* line 18, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+#header #cart_cont {
+  border: 3px red;
+  margin-top: 3em;
+}
+
+/* line 22, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+#header #phone_numbers {
+  border-left: 10px yellow;
+  text-align: right;
+  margin-top: -2em;
+}
+
+/* line 27, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+#header #phone_numbers .phone_nums {
+  font-size: 1.5em;
+}
+
+/* line 32, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+.header_nav {
+  background-image: url("frontend/wood_header_bg");
+  background-repeat: repeat;
+  width: 100%;
+  height: 4em;
+}
+
+/* line 39, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/header.css.scss */
+body {
+  background-image: url("page-bg.jpg");
+  background-repeat: repeat;
+}
+/* line 1, /Users/nastya/Documents/expodoors/app/assets/stylesheets/expodoors/frontend/zamer.css.scss */
+#zamer .img-thumbnail {
+  height: 10em;
+  width: 19em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

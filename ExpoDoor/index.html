@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Expo doors</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/stylereset.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="modernizr.custom.17475.js"></script>
+     <script src="jquerypp.custom.js"></script>
+        <script src="jquery.elastislide.js"></script>
+    <script src="jquerypp.custom.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,cyrillic' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>	
+</head>
+<body>
+<div class="container">
+<header>
+   <div class='row'>
+    <figure id="logo" class="col-sm-3" data-hook>
+        Expo Doors
+        </figure>
+    <p id="header_promo" class="col-sm-3">Продажа межкомнатных и входных дверей от ведущих российских производителей.</p>
+
+    <div id="cart_cont">
+      <div id="link-to-cart" class="col-sm-2" data-hook>
+        <noscript>
+          <%= link_to Spree.t(:cart), '/cart' %>
+        </noscript>
+        &nbsp;
+      </div>
+      <script>Spree.fetch_cart()</script>
+      </div>
+
+    <div id="phone_numbers" class="col-sm-3 col-sm-offset-1">
+       <p>Звоните с 10.00 до 20.00</p>
+       <p class="phone_nums">+7 (499) 755-64-12</p>
+       <p class="phone_nums">+7 (499) 397-72-64</p>
+    </div>
+    </div>
+           <div class='header_nav'>
+           </div>   
+</header>
+
+     <!--navigation -->
+<div id="expo_nav_menu" class="navbar navbar-default" role='navigation'>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">Expo Doors</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+        <li><a href="#">Главная</a></li>
+    <li><a href="#">О Компании</a></li>
+    <li><a href="#">Услуги</a></li>
+    <li><a href="#">Доставка</a></li>
+    <li><a href="#">Акции</a></li>
+    <li><a href="#">Отзывы</a></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right list-unstyled ">
+            <li><a href="#">Корзина</a></li>
+            <li><a href="#">Вход</a></li>
+    </ul>
+        </div>
+</div>
+<!--navigation end-->
+     
+<!--slider-->
+<div class="col-md-12">
+<div id="slidebar">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/slider1.png" alt="Выбирайте лучшие двери с Expo Doors">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/slider2.jpg" alt="Выбирайте лучшие двери с Expo Doors">
+      <div class="carousel-caption">
+      </div>
+    </div>
+      <div class="item">
+      <img src="img/silder3.jpg" alt="Выбирайте лучшие двери с Expo Doors">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+<!-- slider end-->
+     
+<!--sidebar-->
+<aside class="col-md-2">
+    <div id="catalog" >
+        <div id="zamer" class="" >
+        <a href="#"><img src="img/zamer.jpg" alt="Вызов замерщика"></a>
+    </div>
+    <div class="thumbnail head_part">
+      <img src="img/ext_door.jpg" alt="Входные">
+        <h4>Входные</h4>
+      <div class="caption">
+        <ul class="unstyled">
+        <li>Lorem от 6000 р</li>
+        <li>Inposum от 9000р</li>
+        <li>Lorem от 11000р</li>
+    </ul>
+      </div>
+  </div>
+        <div class="thumbnail head_part">
+          <img src="img/ext_door_2.jpg" alt="Входные">
+        <h4>Межкомнатные</h4>
+      <div class="caption">
+        <ul class="unstyled">
+        <li>Lorem от 6000 р</li>
+        <li>Inposum от 9000р</li>
+        <li>Lorem от 11000р</li>
+    </ul>
+      </div>
+  </div>
+        <div class="thumbnail head_part">
+      <img src="img/furnitura_icon.jpg" alt="Входные">
+        <h4>Фурнитура</h4>
+      <div class="caption">
+        <ul class="unstyled">
+        <li>Lorem от 6000 р</li>
+        <li>Inposum от 9000р</li>
+        <li>Lorem от 11000р</li>
+    </ul>
+      </div>
+  </div>
+    
+    </div>
+    
+    <div id="sovet" class="thumbnail">
+        <h4>Наши советы</h4>
+        <div id="sovet_1">
+            
+            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Поможем Вам выбрать дверь</span></a>
+        </div>
+        <div id="sovet_2">
+            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Не знаете как установить дверь, обратитесь к нам</span></a>
+        </div>
+        <div id="sovet_3">
+            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Как производят самые лучшие двери</span></a>
+        </div>
+    </div>
+    <div id="sale_promo">
+        <a href="#"><img class="img-thumbnail" src="img/sale.jpg" alt="Акции"></a>
+    </div>
+</aside>
+<!--sidebar-->
+<div id="main" class="col-md-10">
+    <div class="zakaz_door col-sm-12 text-center">
+    <h3>Межкомнатные и входные двери</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    
+    <div class="benefits row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail text-center">
+        <i class="glyphicon glyphicon-credit-card"></i>
+      <div class="caption">
+        <h3>Оплата</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail text-center">
+        <i class="glyphicon glyphicon-shopping-cart"></i>
+      <div class="caption">
+        <h3>Доставка</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail text-center">
+        <i class="glyphicon glyphicon-wrench"></i>
+      <div class="caption">
+        <h3>Установка</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+    <!-- Products slider - groups template -->
+        
+            
+            <div id="our_doors" class="elastislide-carousel text-center col-sm-12">
+                <h3>Входные металлические двери</h3>
+                <ul id="product_slide" class="elastislide-list text-center">
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                    <li><a href="#"><img src="img/dv_vhod.jpg" alt="image01" /></a><p class="pr_name"><a href="#">Имя двери</a></p><p>от 25499 руб</p></li>
+                </ul>
+           
+        </div>
+        <!-- Slider end-->
+    
+    <div class="zakaz_door col-sm-12 text-center">
+    <h3>Условия заказа наших дверей</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    </div>
+<div id="foot" class="col-sm-12">
+<footer>
+
+    <div id="about_us" class="col-sm-4">
+    <h3>Наши контакты</h3>
+        <adress>
+        <strong>Expo Doors</strong></br>
+        Адрес: Lorem ipsum, d.6, str 7</br>
+        <abbr title="Телефоны">Телефоны</abbr>: +7(999)8008978</br>
+        <span>+7(999)8008978</span></br>
+         <a href="mailto:#">totorie@gmail.com</a>
+        </adress> 
+    </div>
+    <div id="we_are_here" class="col-sm-4">
+    <h3>Схема проезда</h3>
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=_eeJCLE7VcnE0qbnWWHuTkvLYKZPAJFj&width=340&height=220" ></script>
+        
+    </div>
+    
+        <div id="mail_our" class="col-sm-4">
+    <h3>Обратная связь</h3>
+        <form role="form" class="form-horizontal">
+   <div class="form-group">
+      <label for="name" class="control-label col-sm-2">Имя</label>	
+	  <div class="col-sm-10">
+         <input name="name" type="text"  class="form-control" placeholder="Имя"/> 
+	  </div>
+   </div>
+   <div class="form-group">
+      <label for="email" class="control-label col-sm-2" >Email</label>	  
+	  <div class="col-sm-10">
+         <input name="email" type="email" class="form-control" placeholder="Email"/> 
+	  </div>
+   </div>
+   <div class="form-group">
+           <textarea class="form-control" rows="3" placeholder="Текст сообщения"></textarea>
+      
+         <input type="submit" class="btn btn-info pull-right" value="Отправить" />
+ 
+   </div>
+</form>
+        </div>
+    
+</footer>
+    </div>
+<script type="text/javascript">
+				$( '#product_slide' ).elastislide( {minItems : 5});
+		</script>
+
+</div>
+</body>

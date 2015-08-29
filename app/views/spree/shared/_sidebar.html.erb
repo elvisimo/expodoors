@@ -1,0 +1,40 @@
+<aside>
+    <div id="catalog" >
+        <div id="zamer" class="" >
+        <%= link_to image_tag("zamer.jpg"), {:action => 'index', :controller => 'zamer_page'}%>
+    </div>
+        
+    <% @taxonomies.each do |taxonomy| %>
+    <div class="thumbnail head_part">
+        <img src="/assets/ext_<%= taxonomy.id %>.jpg" alt="<%= taxonomy.name %>">
+        <h4 class='taxonomy-root'><%= taxonomy.name %></h4>
+      <div class="caption">
+        <ul class="unstyled">
+            <% taxonomy.taxons.drop(1).each do |taxon| %>
+            <li><%= link_to taxon.name, controller: "taxons", action: "show", id: taxon.id %></li>
+            <% end %>
+    </ul>
+      </div>
+  </div> 
+<% end %>
+        
+    
+    </div>
+    
+    <div id="sovet" class="thumbnail">
+        <h4>Наши советы</h4>
+        <div id="sovet_1">
+            
+            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Поможем Вам выбрать дверь</span></a>
+        </div>
+        <div id="sovet_2">
+            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Не знаете как установить дверь, обратитесь к нам</span></a>
+        </div>
+        <div id="sovet_3">
+            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Как производят самые лучшие двери</span></a>
+        </div>
+    </div>
+    <div id="sale_promo">
+      <%= link_to image_tag("sale.jpg"), {:action => 'index', :controller => 'promo_page'}, class: "img-thumbnail" %>
+    </div>
+</aside>

@@ -1,0 +1,9 @@
+ru:
+ spree:
+    home: "Главная"
+    about: "О Компании"
+    contact: "Контакты"
+    services: "Услуги"
+    delivery: "Доставка"
+    promo: "Акции"
+    review: "Отзывы"
