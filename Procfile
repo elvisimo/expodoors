@@ -1,1 +1,1 @@
-web: bundle exec passenger start -e production
+web: bundle exec passenger start -e production -p $PORT
