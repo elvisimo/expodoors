@@ -14,6 +14,8 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
   #config.site_name = "Expo Doors"
+  country = Spree::Country.find_by_name('Российская Федерация')
+  config.default_country_id = country.id if country.present?
 end
 
 Spree.user_class = "Spree::User"

@@ -11,6 +11,7 @@ module Expodoors
     config.autoload_paths += [
         config.root.join('app')
     ]
+
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
       config.assets.paths << "#{Rails}/assets/images"
       config.assets.paths << "#{Rails}/assets/javascripts"

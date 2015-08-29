@@ -22,9 +22,9 @@ test:
 
 production:
   <<: *default
-    adapter: postgresql
-    encoding: unicode
-    database: myapp_production
-    pool: 5
-    username: expodoors
-    password: Orion123
+  adapter: postgresql
+  encoding: unicode
+  database: expodoors
+  pool: 5
+  username: postgres
+  password: Avaddon1

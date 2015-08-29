@@ -44,7 +44,7 @@
                 <h3><%= taxonomy.name %></h3>
                 <ul id="product_slide_<%= taxonomy.id %>" class="elastislide-list text-center">
                     <% taxonomy.taxons.drop(1).each do |taxon| %>
-                    <li><%= link_to image_tag("dv_vhod"),controller: "taxons", action: "show", id: taxon.id %>
+                    <li><%= link_to image_tag(asset_path("dv_vhod.jpg")),controller: "taxons", action: "show", id: taxon.id %>
                       <p class="pr_name"><%= link_to taxon.name, controller: "taxons", action: "show", id: taxon.id %></p><p>от 25499 руб</p></li>
                     <% end %>
                 </ul>

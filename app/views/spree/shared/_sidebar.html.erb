@@ -10,7 +10,7 @@
         <h4 class='taxonomy-root'><%= taxonomy.name %></h4>
       <div class="caption">
         <ul class="unstyled">
-            <% taxonomy.taxons.drop(1).each do |taxon| %>
+            <% taxonomy.taxons.where.not(parent_id: nil).each do |taxon| %>
             <li><%= link_to taxon.name, controller: "taxons", action: "show", id: taxon.id %></li>
             <% end %>
     </ul>

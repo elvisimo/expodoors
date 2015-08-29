@@ -11,6 +11,9 @@ end
 group :development, :test do
   gem "sqlite3-ruby", "~> 1.3.0", :require => "sqlite3"
 end
+
+#gem for dev to prod db migration
+gem 'yaml_db'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,6 +27,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem "passenger"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -55,4 +59,3 @@ end
 gem 'spree', github: 'spree/spree', branch: 'master'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: 'master'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
-gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: 'master'
