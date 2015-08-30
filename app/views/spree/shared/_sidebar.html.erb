@@ -24,14 +24,16 @@
     <div id="sovet" class="thumbnail">
         <h4>Наши советы</h4>
         <div id="sovet_1">
-            
-            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Поможем Вам выбрать дверь</span></a>
+            <i class="glyphicon glyphicon-pushpin"></i>
+            <%= link_to "Поможем Вам выбрать дверь", {:action => 'index', :controller => 'promo_page'}, class: "desc" %>
         </div>
         <div id="sovet_2">
-            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Не знаете как установить дверь, обратитесь к нам</span></a>
+          <i class="glyphicon glyphicon-pushpin"></i>
+          <%= link_to "Не знаете как установить дверь, обратитесь к нам", {:action => 'index', :controller => 'promo_page'}, class: "desc" %>
         </div>
         <div id="sovet_3">
-            <a href=""><i class="glyphicon glyphicon-pushpin"></i><span class="desc">Как производят самые лучшие двери</span></a>
+          <i class="glyphicon glyphicon-pushpin"></i>
+          <%= link_to "Как производят самые лучшие двери", {:action => 'index', :controller => 'promo_page'}, class: "desc" %>
         </div>
     </div>
     <div id="sale_promo">
