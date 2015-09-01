@@ -462,3 +462,32 @@ p.pr_name a:hover{
     padding-bottom: 1em;
     margin-bottom: 1.5em;
 }
+.table-responsive {
+  background-color: white;
+}
+#update-cart .cart-total td{
+  background-color: white;
+}
+#methods h4{
+  font-weight: bold;
+}
+#save_continue_btn{
+  border:none;
+  background-color: inherit;
+}
+#summary-order-total, .summary-order-total, #order_total{
+  font-size: 1em;
+}
+#order{
+  background-color: white;
+}
+#order_summary h1{
+  margin-bottom: 0;
+}
+.steps-data h4{
+  text-decoration: underline;
+  padding-top: 1em;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 1em;
+}

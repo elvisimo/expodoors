@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
    
   Spree::Core::Engine.routes.draw do
+    post '/' => 'feedback#send_feedback'
       get '/about' => 'about_page#index'
       get '/contact' => 'contact_page#index'
       get '/zamer'  =>  'zamer_page#index'
