@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       get '/about' => 'about_page#index'
       get '/contact' => 'contact_page#index'
       get '/zamer'  =>  'zamer_page#index'
+      post '/zamer'  =>  'zamer_page#zamer_email'
       get '/services'  =>  'services_page#index'
       get '/delivery'  =>  'delivery_page#index'
       get '/promo'  =>  'promo_page#index'

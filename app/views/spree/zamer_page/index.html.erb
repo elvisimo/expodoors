@@ -9,18 +9,18 @@
 <div class="modal-body thumbnail">
   <form class="form-horizontal" role="form">
     <div class="form-group">
-      <label for="inputName" class="col-sm-3 control-label">Ваше Имя</label>
+      <label for="name" class="col-sm-3 control-label">Ваше Имя</label>
       <div class="col-sm-9">
-        <input type="name" class="form-control" id="inputName" placeholder="Ваше Имя">
+        <%= text_field_tag "name"%>
       </div>
     </div>
     <div class="form-group">
-      <label for="inputTel" class="col-sm-3 control-label">Телефон</label>
+      <label for="phone" class="col-sm-3 control-label">Телефон</label>
       <div class="col-sm-9">
-        <input type="text" id="UserMobile" maxlength="11" data-fv-numeric="true" data-fv-numeric-message="Пожалуйста введите правильный номер" data-fv-phone-country11="IN" required="required" data-fv-notempty-message="This field cannot be left blank." placeholder="Номер телефона " class="form-control" name="data[User][mobile]" data-fv-field="data[User][mobile]">
+        <%= phone_field_tag "phone"%>
       </div>
     </div>
-      <button type="submit" class="btn btn-success pull-right">Отправить</button>
+      <button type="submit" formmethod="post" class="btn btn-success pull-right">Отправить</button>
 
       </form>
     </div>
