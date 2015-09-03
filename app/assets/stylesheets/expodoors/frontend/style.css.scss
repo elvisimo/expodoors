@@ -67,9 +67,9 @@ body p {
 aside {
     margin-top: 1.5em;
 }
-#main {
+/*#main {
     margin-top: 1.5em;
-}
+} */
 
  #foot {
     background-color: #dddddd;
@@ -165,9 +165,10 @@ header #phone_numbers p.phone_nums{
 }
 .benefits{
     margin-bottom: 1.5em;
-    margin-top: 1.5em;
 }
-
+.about_company{
+  margin-bottom: 1.5em;
+}
 .door_about p{
   text-indent: 1em;
 }
@@ -237,6 +238,7 @@ h4{
 .elastislide-carousel {
     background-color: #dddddd;
   margin-bottom: 1.5em;
+
 }
 .elastislide-wrapper {
     background-color: #dddddd;
@@ -257,37 +259,7 @@ h4{
 #our_doors h3{
   font-size: 1.3em;
 }
-.es-carousel-wrapper{
-    background: #101010;
-    padding:10px 37px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    position:relative;
-}
-.es-carousel{
-    overflow:hidden;
-    background:#000;
-}
-.es-carousel ul{
-    display:none;
-}
-.es-carousel ul li{
-    height:100%;
-    float:left;
-    display:block;
-}
-.es-carousel ul li a{
-    display:block;
-    border-style:solid;
-    border-color:#222;
-}
-.es-carousel ul li a img{
-    display:block;
-    border:none;
-    max-height:100%;
-    max-width:100%;
-}
+
 .es-nav span{
     position:absolute;
     top:50%;
@@ -490,4 +462,24 @@ p.pr_name a:hover{
   text-align: left;
   font-weight: bold;
   padding-bottom: 1em;
+}
+
+#main_news {
+  background-color: #dddddd;
+}
+.clearfix:before,
+.clearfix:after {
+   content: '\0020';
+   display: block;
+   overflow: hidden;
+   visibility: hidden;
+   width: 0;
+   height: 0;
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.news_article a{
+    font-size: 1.1em;
+    color: brown;
 }

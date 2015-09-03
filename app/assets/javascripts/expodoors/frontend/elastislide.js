@@ -340,7 +340,7 @@
 			this.imgSize = { width : $img.outerWidth( true ), height : $img.outerHeight( true ) };
 
 			this._setItemsSize();
-			this.options.orientation === 'horizontal' ? this.$el.css( 'max-height', this.imgSize.height ) : this.$el.css( 'height', this.options.minItems * this.imgSize.height );
+			
 
 			// add the controls
 			this._addControls();
@@ -397,8 +397,7 @@
 			
 			this.$items.css( {
 				'width' : w + '%',
-				'max-width' : this.imgSize.width,
-				'max-height' : this.imgSize.height
+				'max-width' : this.imgSize.width
 			} );
 
 			if( this.options.orientation === 'vertical' ) {

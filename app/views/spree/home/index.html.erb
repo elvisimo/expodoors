@@ -42,9 +42,9 @@
             <% @taxonomies.each do |taxonomy| %>
             <div id="our_doors" class="elastislide-carousel text-center col-sm-12">
                 <h3><%= taxonomy.name %></h3>
-                <ul id="product_slide_<%= taxonomy.id %>" class="elastislide-list text-center">
+                <ul id="product_slide_<%= taxonomy.id %>" class="elastislide-list clearfix text-center">
                     <% taxonomy.taxons.drop(1).each do |taxon| %>
-                    <li><%= link_to image_tag(asset_path("dv_vhod.jpg")),controller: "taxons", action: "show", id: taxon.id %>
+                    <li><%= link_to image_tag(taxon.icon.url(:original)),controller: "taxons", action: "show", id: taxon.id %>
                       <p class="pr_name"><%= link_to taxon.name, controller: "taxons", action: "show", id: taxon.id %></p><p>от 25499 руб</p></li>
                     <% end %>
                 </ul>
@@ -62,6 +62,6 @@
         <% @taxonomies.each do |taxonomy| %>
             $("#product_slide_<%= taxonomy.id %>").elastislide( {minItems : 3});
         <% end %>
-		</script>
+    </script>
 </div>
 
