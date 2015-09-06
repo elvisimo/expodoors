@@ -15,8 +15,17 @@
 </header>
 
      <!--navigation -->
-<div id="expo_nav_menu" class="navbar navbar-default col-sm-12" role='navigation'>
-    <ul class="nav navbar-nav">
+<nav id="expo_nav_menu" class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
         <li><%= link_to Spree.t(:home), spree.root_path %></li>
         <li><%= link_to Spree.t(:about), about_path %></li>
         <li><%= link_to Spree.t(:services), services_path %></li>
@@ -24,8 +33,8 @@
         <li><%= link_to Spree.t(:promo), promo_path %></li>
         <li><%= link_to Spree.t(:review), review_path %></li>
         </ul>
-        <ul class="nav navbar-nav pull-right list-unstyled ">
-            <li>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
                   <div id="link-to-cart">
                     <noscript>
                      <%= link_to Spree.t(:cart), '/cart' %> 
@@ -40,5 +49,7 @@
           <% else %>
               <li id="link-to-login"><%= link_to Spree.t(:login), spree.login_path %></li>
           <% end %>
-    </ul>
-</div>
+      </ul>
+    </div>
+  </div>
+</nav>
