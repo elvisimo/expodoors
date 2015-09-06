@@ -483,7 +483,18 @@ p.pr_name a:hover{
     font-size: 1.1em;
     color: brown;
 }
+/* FOOTER OBRATNAYA SVYAZ BEGIN*/
 
+
+#form_obr_svyaz label.control-label{ 
+  padding-right: 0;
+}
+
+#form_obr_svyaz #text{
+  margin-bottom: 1em;
+}
+
+/* FOOTER OBRATNAYA SVYAZ END*/
 
 /* Review page styles begin */
 
