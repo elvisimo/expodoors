@@ -483,3 +483,48 @@ p.pr_name a:hover{
     font-size: 1.1em;
     color: brown;
 }
+
+
+/* Review page styles begin */
+
+.otziv_block {
+  margin-bottom: 1.5em;
+  position: relative;
+  padding: 2em;
+  background: white;
+  border-radius: 0.3em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+}
+.otziv_block img{
+  position: absolute;
+  top: 1em;
+  right: 5em;
+}
+.otziv_block p.title{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.otziv_block p.date{
+  color: brown;
+  font-size: 1.2em;
+}
+.otziv_block p.text{
+  font-style: italic;
+}
+#otziv_page_desc {
+  margin-bottom: 1.5em;
+}
+#otziv_page_desc h3{
+  margin-bottom: 0em;
+}
+
+#otziv_page_desc p#page_desc{
+  padding: 1em;
+}
+
+
+
+
+/* Review page styles end */

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
@@ -10,7 +11,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
    
   Spree::Core::Engine.routes.draw do
-    post '/' => 'feedback#send_feedback'
+     post "feedback/send_feedback" => "feedback#send_feedback"
+    
       get '/about' => 'about_page#index'
       get '/contact' => 'contact_page#index'
       get '/zamer'  =>  'zamer_page#index'
@@ -19,6 +21,9 @@ Rails.application.routes.draw do
       get '/delivery'  =>  'delivery_page#index'
       get '/promo'  =>  'promo_page#index'
       get '/review'  =>  'review_page#index'
+      post '/review'  =>  'review_page#create'
+      post '/feedbacks/create'  =>  'review_page#create'
+      delete '/feedbacks/delete/:id'  =>  'review_page#destroy'
 end 
   
   # You can have the root of your site routed with "root"

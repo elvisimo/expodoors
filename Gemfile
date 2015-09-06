@@ -36,7 +36,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'russian', '~> 0.6.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 # Use Capistrano for deployment
