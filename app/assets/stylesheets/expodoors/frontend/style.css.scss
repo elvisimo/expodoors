@@ -11,7 +11,7 @@ body {
   font-weight: bold;
 }
 body h3, body h1 {
-  background-color: brown;
+  background-color: #2956b2;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   color: white;
@@ -26,7 +26,7 @@ body p {
 
 /* navigation*/
 #expo_nav_menu {
-    background-color: brown;
+    background-color: #084c8d;
     margin-top: 1em;
 }
 
@@ -77,6 +77,8 @@ aside {
    width:100%;
     height: 100%;
      margin-top: 2em;
+      box-shadow: 0 0 15px -10px #ddd inset;
+      border: 1px solid #ddd;
 }
 
 #foot h3{
@@ -84,13 +86,14 @@ aside {
     color: black;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    border-bottom: 0.1em solid brown;
+    border-bottom: 0.1em solid #2956b2;
     font-size: 1.3em;
     font-weight: bold;
+     box-shadow: 0 0 15px -10px #ddd inset;
 }
 
 .btn-info {
-    background-color: brown;
+    background-color: #2956b2;
     margin-top: 0.5em;
 }
 
@@ -99,12 +102,14 @@ aside {
     background-color: #dddddd;
     padding: 0;
     margin-bottom: 0;
+     box-shadow: 0 0 15px -10px #ddd inset;
+     border: 1px solid #ddd;
 }
 .head_part{
     margin-bottom: 1.5em;
 }
 .head_part h4{
-    background-color: brown;
+    background-color: #2956b2;
     color: white;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
@@ -114,9 +119,9 @@ aside {
     text-decoration: none;
 }
 .head_part li a:hover{
-    color: brown;
+    color: #2956b2;
     padding-left: 0.3em;
-    border-left: 0.3em solid brown;
+    border-left: 0.3em solid #2956b2;
 }
 
 header {
@@ -134,7 +139,7 @@ header #phone_numbers p.phone_nums{
 }
 
 #phone_numbers .glyphicon-earphone{
-  color: brown;
+  color: #2956b2;
   padding-right: 0.5em;
 }
 .carousel-inner #photo{
@@ -152,10 +157,12 @@ header #phone_numbers p.phone_nums{
     height:100%;
     margin-bottom: 1.5em;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid #ddd;
 }
 
 #sale_promo{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid #ddd;
 }
 #sale_promo img {
   width: 100%;
@@ -175,7 +182,7 @@ header #phone_numbers p.phone_nums{
 }
 .glyphicon-shopping-cart, .glyphicon-credit-card, .glyphicon-wrench{
     font-size: 5em;
-    color: brown;
+    color: #2956b2;
     margin-top: 0.5em;
     padding-bottom: 0px;
 }
@@ -209,12 +216,12 @@ header #phone_numbers p.phone_nums{
 a .desc{
     margin-left: 0.5em;
 }
-#sovet {background-color: #dddddd}
+#sovet {background-color: #dddddd; box-shadow: 0 0 15px -10px #ddd inset; border: 1px solid #ddd;}
 #sovet a{
     color: black;
 }
 #sovet h4{
-    background-color: brown;
+    background-color: #2956b2;
     padding-bottom: 0.3em;
     padding-top: 0.3em;
     color: white;
@@ -222,14 +229,14 @@ a .desc{
 div[id^=sovet]:not(:last-child){
     text-align: center;
     margin-bottom: 1.5em;
-    border-bottom: 0.1em solid brown;
+    border-bottom: 0.1em solid #2956b2;
 }
 h4{
     text-align: center;
 }
 
 .elastislide-carousel h3{
-    background-color: brown;
+    background-color: #2956b2;
     color: white;
     margin-top: 0;
     margin-bottom: 0;
@@ -239,11 +246,13 @@ h4{
 .elastislide-carousel {
     background-color: #dddddd;
   margin-bottom: 1.5em;
-
+ box-shadow: 0 0 15px -10px #ddd inset;
+ border: 1px solid #ddd;
 }
 .elastislide-wrapper {
     background-color: #dddddd;
-
+ box-shadow: 0 0 15px -10px #ddd inset;
+ border: 1px solid #ddd;
 }
 .elastislide-carousel ul li {
     background-color: white;
@@ -288,11 +297,12 @@ h4{
     padding-right: 0;
     padding-left: 0;
   padding-bottom: 0.8em;
-
+ box-shadow: 0 0 15px -10px #ddd inset;
+ border: 1px solid #ddd;
 
 }
 .zakaz_door h3{
-    background-color: brown;
+    background-color: #2956b2;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     color: white;
@@ -320,7 +330,7 @@ h4{
   overflow: hidden;
 }
 .panel-foot {
-  background-color: brown;
+  background-color: #2956b2;
   color: white;
   height: 3em;
 }
@@ -338,7 +348,7 @@ h4{
   color: #000;
 }
 .panel-body a:hover{
-  color: brown;
+  color: #2956b2;
   text-decoration: underline;
 }
 
@@ -347,7 +357,7 @@ p.pr_name a{
 }
 
 p.pr_name a:hover{
-  color: brown;
+  color: #2956b2;
 }
 
 #breadcrumbs {
@@ -355,14 +365,14 @@ p.pr_name a:hover{
  }
 
 .btn-success{
-  background-color: brown;
+  background-color: #2956b2;
 }
 .btn-success:hover{
-  background-color: brown;
+  background-color: #2956b2;
   opacity: 0.7;
 }
 .btn-success:active {
-  background-color: brown;
+  background-color: #2956b2;
   opacity: 0.4;
 }
 
@@ -383,11 +393,13 @@ p.pr_name a:hover{
   margin-bottom: 0;
 }
 .door_delivery p{
-  background-color:#dddddd;
+  background-color: #dddddd;
   padding-top: 0.7em;
   padding-bottom: 0.7em;
   line-height: 1.5em;
   padding-right: 0.7em;
+   box-shadow: 0 0 15px -10px #ddd inset;
+   border: 1px solid #ddd;
 }
 .door_delivery strong{
   font-weight: bold;
@@ -428,10 +440,12 @@ p.pr_name a:hover{
 #cart_container{
   background-color: #dddddd;
   color: white;
+   box-shadow: 0 0 15px -10px #ddd inset;
+   border: 1px solid #ddd;
 }
 
 .door_article {
-    border-bottom: 0.2em dotted brown;
+    border-bottom: 0.2em dotted #2956b2;
     padding-bottom: 1em;
     margin-bottom: 1.5em;
 }
@@ -467,6 +481,8 @@ p.pr_name a:hover{
 
 #main_news {
   background-color: #dddddd;
+   box-shadow: 0 0 15px -10px #ddd inset;
+   border: 1px solid #ddd;
 }
 .clearfix:before,
 .clearfix:after {
@@ -482,7 +498,7 @@ p.pr_name a:hover{
 
 .news_article a{
     font-size: 1.1em;
-    color: brown;
+    color: #2956b2;
 }
 /* FOOTER OBRATNAYA SVYAZ BEGIN*/
 
@@ -508,6 +524,7 @@ p.pr_name a:hover{
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.20);
+  border: 1px solid #ddd;
 }
 .otziv_block img{
   position: absolute;
@@ -519,7 +536,7 @@ p.pr_name a:hover{
   font-size: 1.2em;
 }
 .otziv_block p.date{
-  color: brown;
+  color: #2956b2;
   font-size: 1.2em;
 }
 .otziv_block p.text{
