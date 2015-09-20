@@ -28,6 +28,7 @@ body p {
 #expo_nav_menu {
     background-color: #084c8d;
     margin-top: 1em;
+    clear: both;
 }
 
 #expo_nav_menu a{
@@ -128,6 +129,10 @@ header {
     color: grey;
     height: 5em;
 }
+header figure img {
+  width: inherit;
+}
+
 
 #header_promo, #phone_numbers{
   padding-top: 0.7em;
